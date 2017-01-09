@@ -1,0 +1,16 @@
+1. ReactDOM to render HTML code. index.html
+2. ReactDOm to render React component. <index.html>
+3. React to render multiple HTML codes in a component. <index.html>
+4. Render a component multiple times. <index.html>
+5. pass properties to components. <index.html>
+6. Define onclick action for buttons <index2.html>
+7. define other functions within a component  <index2.html>
+8. use children properties  <index2.html>
+
+<index3.html>
+
+1. props is used with things that are constant
+2. state is used for dynamic things
+3. setState() automatically calls render()
+4. button = onClick()
+5. checkbox = onChange()

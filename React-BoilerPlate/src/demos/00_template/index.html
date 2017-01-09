@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Template</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="example">
+    </div>
+    <script type="text/babel">
+        //A component name always is capitalised ??
+        // every single component can return only one parent element.
+        //else wrap them within one parent element <div>
+        var Bacon = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                    <h3>This is my component</h3>
+                    <p> Multiple statements in a component.</p>
+                    </div>
+                )}
+        });
+        //ReactDOM.render(<h1>Aayush</h1>,document.getElementById('example'));
+        ReactDOM.render(<div>
+            <Bacon />
+            <Bacon />
+            <Bacon />
+        </div>,document.getElementById('example'));
+    </script>
+</body>
+</html>
