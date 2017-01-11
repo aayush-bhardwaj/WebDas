@@ -12,7 +12,7 @@ import anotherComponent from "./anotherComponent"
 const store = createStore(combineReducers({
     global : counterApp,
     routing : routerReducer
-}));
+}),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 const history = syncHistoryWithStore(browserHistory , store);
 

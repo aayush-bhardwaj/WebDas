@@ -81,7 +81,7 @@
 	var store = (0, _redux.createStore)((0, _redux.combineReducers)({
 	    global: _reducers2.default,
 	    routing: _reactRouterRedux.routerReducer
-	}));
+	}), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 	var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
