@@ -39,6 +39,12 @@ module.exports = function(app, passport){
 	  passport.authenticate('facebook', { successRedirect: '/profile',
 	                                      failureRedirect: '/' }));
 
+	app.get('/auth/google', passport.authenticate('google', {scope: ['profile','email']}));
+
+	app.get('/auth/google/callback',
+	  passport.authenticate('google', { successRedirect: '/profile',
+	                                      failureRedirect: '/' }));
+
 	app.get('/:username/:password', function(req, res){
 		var newUser = new User();
 		newUser.local.username = req.params.username;
